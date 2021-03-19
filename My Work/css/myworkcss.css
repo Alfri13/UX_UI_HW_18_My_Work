@@ -1,0 +1,142 @@
+body {background-color: cyan;}
+#garden{grid-area: garden;}
+#bunny{grid-area: bunny;}
+#menagerie{grid-area: menagerie;}
+#bee{grid-area:bee;}
+
+.myWork {background-color: cyan;
+height: 926px;
+width: 96%;
+display: flex;
+justify-content: center;}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'garden bunny'
+    'menagerie bee';
+    column-gap: 5px;
+}
+
+.grid-container > div{
+    text-align: center;
+    width: 500px;
+    height: 300px;
+margin:  auto;
+}
+img {border-radius: 15px;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0);}
+
+
+.about {
+    background-color: magenta;
+    font-family: futura-pt, sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: 25pt;
+text-align: center;
+height: 50px;
+position: absolute;
+top:400px;
+left: -35px;
+    width: 125px;
+    border-radius: 15px;
+    padding-top: 5px;
+    transform: rotate(90deg);
+    box-shadow: 0px -5px 5px rgb(0, 0, 0);
+    right: -10px;
+
+
+}
+.myskills {  
+    background-color: yellow;
+    font-family: futura-pt, sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: 25pt;
+text-align: center;
+height: 50px;
+position: absolute;
+top:525px;
+left: -35px;
+    width: 125px;
+    border-radius: 15px;
+    padding-top: 5px;
+    transform: rotate(90deg);
+    box-shadow: 0px -5px 5px rgb(0, 0, 0);
+    right: -50px;}
+ 
+h3 {font-family: 'VT323', monospace;;
+    font-size: 24pt}
+
+    .Mywork{ 
+        font-family: futura-pt, sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: 25pt;
+        background-color: cyan;
+        width: 926px;
+    transform: rotate(90deg);
+    text-align: center;
+    position: absolute;
+right: -405px;
+top: 450px;
+box-shadow:0px -5px 5px rgb(0, 0, 0);
+z-index: 2;
+
+}
+
+    .Contact{  font-family: futura-pt, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 25pt;
+        color:white;
+        background-color: darkblue;
+        transform: rotate(90deg);
+    width: 926px;
+    text-align: center;
+    position: absolute;
+    right: -445px;
+    top: 450px;
+    }
+
+    @media screen and (max-width: 600px){
+    
+body {width:100%}
+    .grid-container {display: grid;
+        grid-template-areas:
+        'garden' 
+        'bunny'
+        'menagerie'
+        'bee';}
+    img {width: 45%;
+    height: 45%;}
+
+    .Mywork{ 
+        font-family: futura-pt, sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: 25pt;
+        background-color: cyan;
+        width: 1500px;
+    transform: rotate(90deg);
+    text-align: center;
+    position: absolute;
+right: -690px;
+top: 450px;
+box-shadow:0px -5px 5px rgb(0, 0, 0);
+z-index: 2;}
+
+.Contact{  font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25pt;
+    color:white;
+    background-color: darkblue;
+    transform: rotate(90deg);
+width: 1500px;
+text-align: center;
+position: absolute;
+right: -735px;
+top: 450px;
+}
+}
